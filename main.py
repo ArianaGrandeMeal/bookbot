@@ -27,7 +27,9 @@ def count_chars(text):
             chars[char] = 1
     return chars
 
-
+#converts dictionary to list of tuples; sorts list by number of
+#characters, descending; creates a new list of alpha characters
+#only; prints report to console
 def print_report(text):
     sorted_letter_count = []
     dict_list = list(count_chars(text).items())
